@@ -26,5 +26,16 @@ namespace Exam_UWP
         {
             this.InitializeComponent();
         }
+
+        private void Submit_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(DisplayInformation), "Username: " + username.Text + "\r\n" + 
+                "Nickname: " + name.Text + "\r\n" + 
+                "Email: " + email.Text + "\r\n" + 
+                "Address: " + address.Text + "\r\n" + 
+                "About: " + about.Text);
+            //Frame.Navigate(typeof(DisplayInformation), name.Text);
+            //Frame.Navigate(typeof(DisplayInformation), email.Text);
+        }
     }
 }

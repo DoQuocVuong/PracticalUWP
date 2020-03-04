@@ -1,4 +1,4 @@
-﻿<Page
+﻿<Page x:Name="Page2"
     x:Class="Exam_UWP.RegistrationForm"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -63,16 +63,16 @@
         <TextBlock Grid.Row="10" Grid.Column="0" Text="About:" Margin="10,0,10,0" 
                    HorizontalAlignment="Right" VerticalAlignment="Center" />
         
-        <TextBox  Grid.Row="1" Grid.Column="2" Margin="10,10,10,10" PlaceholderForeground="White"/>
-        <PasswordBox  Grid.Row="2" Grid.Column="2" Margin="10,10,10,10" />
-        <TextBox  Grid.Row="3" Grid.Column="2" Margin="10,10,10,10" PlaceholderForeground="White"/>
-        <TextBox  Grid.Row="4" Grid.Column="2" Margin="10,10,10,10" PlaceholderForeground="White"/>
+        <TextBox x:Name="username"  Grid.Row="1" Grid.Column="2" Margin="10,10,10,10" PlaceholderForeground="White"/>
+        <PasswordBox x:Name="password"  Grid.Row="2" Grid.Column="2" Margin="10,10,10,10" />
+        <TextBox  x:Name="name" Grid.Row="3" Grid.Column="2" Margin="10,10,10,10" PlaceholderForeground="White"/>
+        <TextBox  x:Name="address" Grid.Row="4" Grid.Column="2" Margin="10,10,10,10" PlaceholderForeground="White"/>
         <ComboBox  Grid.Row="5" Grid.Column="2" Margin="10,10,10,10" PlaceholderText="Please select a country"
                    PlaceholderForeground="White">
             <x:String></x:String>
         </ComboBox>
         <TextBox  Grid.Row="6" Grid.Column="2" Margin="10,10,10,10" PlaceholderForeground="White"/>
-        <TextBox  Grid.Row="7" Grid.Column="2" Margin="10,10,10,10" PlaceholderForeground="White"/>
+        <TextBox x:Name="email" Grid.Row="7" Grid.Column="2" Margin="10,10,10,10" PlaceholderForeground="White"/>
         <StackPanel Grid.Row="8" Grid.Column="2" Margin="10,10,10,10" >
             <StackPanel>
                 <StackPanel Orientation="Horizontal">
@@ -90,9 +90,12 @@
                 </StackPanel>
             </StackPanel>
         </StackPanel>
-        <TextBox  Grid.Row="10" Grid.Column="2" Margin="10,10,10,10"/>
+        <TextBox  x:Name="about" Grid.Row="10" Grid.Column="2" Margin="10,10,10,10"/>
         <Button Grid.Row="11" Grid.ColumnSpan="2" x:Name="Submit" Content="Submit" 
-                HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                HorizontalAlignment="Center" VerticalAlignment="Center" Click="Submit_Click"/>
+        
+        
+        <TextBlock x:Name="pageTitle" Text="Page 2" />
     </Grid>
 
 </Page>
