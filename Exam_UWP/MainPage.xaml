@@ -1,0 +1,89 @@
+﻿<Page
+    x:Class="Exam_UWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Exam_UWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Background="LightBlue" Grid.Row="0" Grid.Column="0" Margin="5">
+            <TextBlock Foreground="White" Text="Photoshop" FontSize="15"/>
+        </StackPanel>
+        <StackPanel Background="LightBlue" Grid.Row="0" Grid.Column="2" Margin="5">
+            <TextBlock Foreground="White" Text="UK" FontSize="30"/>
+        </StackPanel>
+        <StackPanel Background="LightBlue" Grid.Row="0" Grid.Column="1" Margin="5">
+            <TextBlock Foreground="White" Text="Invision" FontSize="30"/>
+        </StackPanel>
+        <StackPanel Background="LightBlue" Grid.Row="1" Grid.Column="1" Margin="5,5,5,5" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <TextBlock Foreground="White" Text="Design" FontSize="30"/>
+        </StackPanel>
+        <StackPanel Background="Blue" Grid.Row="3" Grid.Column="1" Margin="5">
+            <TextBlock Foreground="White" Text="Javascript" FontSize="20"/>
+        </StackPanel>
+        <StackPanel Background="LightBlue" Grid.Row="3" Grid.Column="2" Margin="5">
+            <TextBlock Foreground="White" Text="Layout" FontSize="30"/>
+        </StackPanel>
+        <StackPanel Background="Blue" Grid.Row="2" Grid.Column="3" Margin="5">
+            <TextBlock Foreground="White" Text="HTML" FontSize="30"/>
+        </StackPanel>
+        <StackPanel Background="Blue" Grid.Row="2" Grid.Column="4" Margin="5">
+            <TextBlock Foreground="White" Text="PHP" FontSize="30"/>
+        </StackPanel>
+        <StackPanel Background="Blue" Grid.Row="1" Grid.Column="4" Margin="5">
+            <TextBlock Foreground="White" Text="Rust" FontSize="30"/>
+        </StackPanel>
+        <StackPanel Background="Blue" Grid.Row="3" Grid.Column="3" Margin="5,5,5,5" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <TextBlock Foreground="White" Text="Web Dev" FontSize="30"/>
+        </StackPanel>
+        <StackPanel Background="Blue" Grid.Row="4" Grid.Column="1" Margin="5">
+            <TextBlock Foreground="White" Text="Ruby" FontSize="30"/>
+        </StackPanel>
+        <StackPanel Background="Blue" Grid.Row="4" Grid.Column="2" Margin="5">
+            <TextBlock Foreground="White" Text="CSS" FontSize="30"/>
+        </StackPanel>
+        <StackPanel Background="Blue" Grid.Row="5" Grid.Column="1" Margin="5">
+            <TextBlock Foreground="White" Text="Go" FontSize="30"/>
+        </StackPanel>
+        <StackPanel Background="Purple" Grid.Row="5" Grid.Column="2" Margin="5,5,5,5" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <TextBlock Foreground="White" Text="Motion" FontSize="30"/>
+        </StackPanel>
+        <StackPanel Background="Purple" Grid.Row="5" Grid.Column="4" Margin="5">
+            <TextBlock Foreground="White" Text="Maya" FontSize="30"/>
+        </StackPanel>
+        <StackPanel Background="Purple" Grid.Row="6" Grid.Column="4" Margin="5">
+            <TextBlock Foreground="White" Text="Nuke" FontSize="30"/>
+        </StackPanel>
+        <StackPanel Background="Purple" Grid.Row="5" Grid.Column="5" Margin="5">
+            <TextBlock Foreground="White" Text="Cinema 4D" FontSize="26" TextWrapping="Wrap"/>
+        </StackPanel>
+        <StackPanel Background="Purple" Grid.Row="8" Grid.Column="3" Margin="5">
+            <TextBlock Foreground="White" Text="Affect Effect" FontSize="30" TextWrapping="Wrap"/>
+        </StackPanel>
+    </Grid>
+
+
+</Page>
